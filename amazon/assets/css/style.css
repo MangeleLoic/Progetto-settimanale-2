@@ -1,0 +1,68 @@
+main {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.Section1 {
+    background-color: orangered;
+    margin: 8px;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+.container {
+    display: inline-block;
+    padding: 4px;
+    
+  }
+.container img {
+    width: 80px;
+    height: 80px;
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(240, 235, 235) ;
+}
+.image {
+    display: inline-block;
+    width: 85%;
+    height: 90px;
+    object-fit: fill;
+    
+}
+
+h6 {
+    font-size: 0.1em;
+    color: white;
+}
+
+.logo1,
+.logo2 {
+    background-color: black;
+}
+
+.navbar,
+.similNavbar {
+    background-color: gray;
+}
+
+main,
+footer {
+    text-align: center;
+}
+
+.navbar p {
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.4em;
+}
+
+.logoTop {
+    text-align: left;
+    width: 9%;
+}
+
+.logoFooter {
+    text-align: center;
+    width: 12%;
+}
