@@ -112,7 +112,7 @@ const justTrims = []
     console.log('Buzz');
   }
 });
-
+console.log()
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
@@ -120,7 +120,18 @@ const justTrims = []
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
+ i = 0;
+while ( i < numericArray.length) {
+  if ( numericArray[i] === 32) {
+    break;
+  }
+  console.log(numericArray[i]); 
+  i++;
 
+}
+
+
+  
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
