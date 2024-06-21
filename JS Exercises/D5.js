@@ -62,9 +62,6 @@ const cars = [
   },
 ]
 
-
-cars.licensePlate = 'Va333';
-
 cars.forEach(car => {
   car.licensePlate = 'Va33';
 });
@@ -74,18 +71,30 @@ cars.forEach(car => {
 console.log(cars)
  
 
-
-
-
-
-
-
-
-
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
-*/
+*/const newCar = {
+  brand: 'Tesla',
+  model: 'Model S',
+  color: 'black',
+  trims: ['standard', 'plaid'],
+  licensePlate:  'Va33',
+};
+
+cars.push(newCar);
+
+console.log(cars);
+
+
+
+
+//rimuovere l'ultimo elemento
+cars.forEach(car => {
+  delete car.trims;  
+});
+
+console.log(cars);
 
 
 /* ESERCIZIO 7
@@ -96,7 +105,13 @@ const justTrims = []
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
-*/
+*/cars.forEach(car => {
+  if (car.color.charAt(0).toLowerCase() === 'b') {
+    console.log('Fizz');
+  } else {
+    console.log('Buzz');
+  }
+});
 
 
 /* ESERCIZIO 9
